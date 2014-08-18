@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_play"
+            android:id="@+id/button_play_pause"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="--"
+            android:id="@+id/song_name_pv"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/song_duration_pv"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="--"
+            android:id="@+id/song_duration_pv"
+            android:layout_alignBaseline="@+id/button_play_pause"
+            android:layout_alignBottom="@+id/button_play_pause"
+            android:layout_toLeftOf="@+id/button_play_pause"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="--"
+            android:id="@+id/band_name_pv"
+            android:layout_alignBottom="@+id/button_play_pause"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/song_duration_pv"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-------------------"
+            android:id="@+id/last_phrase"
+            android:autoText="false"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_above="@+id/current_phrase"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="--------------------"
+            android:id="@+id/current_phrase"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/background_lyric"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-------------------"
+            android:id="@+id/next_phrase"
+            android:autoText="false"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/current_phrase"
+            android:layout_alignParentLeft="true"/>
+
+</RelativeLayout><!-- From: file:/Users/Behnam/Downloads/KaraokeFHProject/KaraokeFH/src/main/res/layout/activity_playing.xml -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/label_select_song"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="25dp"/>
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:id="@+id/spinner_select_song"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="@string/string_play_song"
+            android:id="@id/button_play_song"
+            android:layout_gravity="center"/>
+
+</LinearLayout>

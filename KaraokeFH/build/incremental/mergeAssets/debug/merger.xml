@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Volumes/Data/Universidad/2CICLO/ERASMUS/Software development using Android and Java ME/Project/KaraokeFHProject/KaraokeFH/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Volumes/Data/Universidad/2CICLO/ERASMUS/Software development using Android and Java ME/Project/KaraokeFHProject/KaraokeFH/src/debug/assets" />
+    </dataSet>
+
+</merger>
